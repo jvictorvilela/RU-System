@@ -1,0 +1,590 @@
+@font-face {
+	font-family: "Myriad Pro";
+	src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+@font-face {
+	font-family: "Myriad Pro Light";
+	src: url(../fonts/MyriadPro-Light.otf);
+}
+
+@font-face {
+	font-family: "Myriad Pro Bold";
+	src: url(../fonts/MyriadPro-Bold.otf);
+}
+
+@font-face {
+	font-family: "Myriad Pro Semibold";
+	src: url(../fonts/MyriadPro-Semibold.otf);
+}
+
+*, html, body {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", "PT sans", Calibri, sans-serif;
+}
+
+a {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", "PT sans", Calibri, sans-serif;
+	outline: none;
+        color: #2ecc71;
+        text-decoration: none!important;
+ 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+a:hover {
+    color:#33db7a;
+}
+
+button {
+    outline:none!important;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Myriad Pro Semibold", "Gill Sans", "Gill Sans MT", "PT sans", Calibri, sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
+.bg {
+	/*background-color: #1d1d1d;*/
+	background-image: url("../img/bg2.jpg");
+}
+
+
+.full, html, body {
+	min-height: 100%;
+	height: 100%;
+}
+
+.login-place {
+	background-color: #f3f3f3;
+	color: #a8a8a8;
+	text-align: center;
+	padding: 100px 50px;
+	border-radius: 0px 3px 3px 0px;
+}
+
+
+
+
+.box-login form {
+	text-align:left;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.box-login img {
+	margin-bottom: 25px;
+}
+
+.box-login input[type="text"], .box-login input[type="password"], .box-login input[type="checkbox"] {
+	color: #a8a8a8!important;
+	margin-bottom:15px;
+	padding:10px;
+}
+
+.box-login .btn-green {
+	width: 100%;
+	background-color: #2ecc71;
+	color: #fff;
+	font-family: "Myriad Pro Semibold";
+}
+
+
+.box-login a {
+	font-size:15px;
+	color:#a8a8a8;
+}
+
+.height-box-login {
+	height: 620px;
+}
+
+.cardapio {
+	z-index:999;
+	border-radius:3px 0px 0px 3px;
+	background-color:#fff;
+	box-shadow:5px 0px 8px rgba(0,0,0,0.02);
+        padding: 10px 30px;
+}
+
+.cardapio .top-cardapio {
+	border-bottom: #e6e6e6 1px solid;
+	padding-bottom: 10px;
+}
+
+
+.cardapio .arrow-right {
+	float: right;
+	margin-right: 20px;
+}
+
+.cardapio .arrow-left {
+	float: left;
+	margin-left: 20px;
+}
+
+.cardapio .arrow-left, .cardapio .arrow-right  {
+	position: relative;
+}
+
+.clear {
+	clear: both;
+}
+
+.carousel-cardapio {
+	color: #8a8a8a;
+	font-size: 15px;
+}
+
+.carousel-cardapio h3 {
+	font-family: "Myriad Pro Semibold";
+	font-size: 16px;
+	margin-bottom:30px;
+}
+
+.carousel-cardapio ul {
+	width: 46%;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.carousel-cardapio ul:first-child {
+	margin-right: 8%;
+}
+
+.carousel-cardapio ul li {
+	list-style: none;
+	margin-bottom: 12px;
+	border-bottom: #e6e6e6 1px solid;
+	padding-bottom: 6px;
+}
+
+.carousel-cardapio h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.nav-carousel {
+	position: relative;
+	bottom: -20px;
+	z-index: 998;
+}
+
+.top-cardapio h1 {
+	font-size: 16px;
+	color: #2ecc71;
+}
+
+.cardapio-content {
+	padding: 25px 25px;
+}
+
+
+
+.box-login .btn-green:hover {
+	background-color:#2abb68;
+}
+
+.btn-green {
+  	color: #fff;
+	background-color: #2ecc71;
+}
+
+.btn-green:hover {
+	background-color:#2abb68;
+}
+
+.btn-green:focus, .btn-green.focus {
+  box-shadow: 0 0 0 0.2rem rgba(43, 204, 113, 0.5);
+}
+
+.form-green:focus {
+  box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5);
+  border-color:#ced4da;
+}
+
+.canvas {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.copyright {
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+}
+
+
+/* css da área administrativa */
+
+.top {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	background-color: #242424;
+	z-index: 999;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.top .logo-admin {
+	margin-top:13px;
+}
+
+.top .usuario-info {
+	float: right;
+	margin-top: 13px;
+}
+
+.top .usuario-info .usuario-foto {
+	margin-right: 8px;
+	width: 35px;
+	height: 35px;
+	border-radius:100%;
+	border: 2px solid #fff;
+	float:left;
+	background-size: 100%;
+}
+
+.top .usuario-info .usuario-nome {
+	margin-top: -4px;
+	font-size: 16px;
+	color: #e7e7e7;
+	float: left;
+ 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+.top .usuario-info a .usuario-nome:hover {
+	color: #fff;
+}
+
+.top .usuario-info .usuario-nivel {
+	font-size: 12px;
+	color: #959595;
+}
+
+.nav-left {
+	padding-top:60px;
+	position: fixed;
+	background-color: #2a2a2a;
+	height: 100%;
+	width: 212px;
+	z-index: 998;
+}
+
+.nav-left nav ul {
+	margin: 0px;
+	margin-top: 27px;
+	padding: 0px;
+}
+
+.nav-left nav ul li a {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", "PT sans", Calibri, sans-serif!important;
+	list-style: none;
+	color: #a8a8a8;
+	display: inline-block;
+	width: 100%;
+  	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.nav-left nav ul li.active a {
+	list-style: none;
+	color: #2ecc71;
+	display: inline-block;
+	width: 100%;
+ 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.nav-left nav ul li.active:hover a {
+	color: #31db79;
+	text-decoration: none;
+}
+
+.nav-left nav ul li {
+	font-size: 17px;
+	padding-left: 30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.nav-left nav ul li.active {
+	padding-left: 25px;
+	border-left: 5px solid #2ecc71;
+}
+
+.nav-left nav ul li.active:before {
+  border: 10px solid transparent;
+  border-right-color: #f2f2f2;
+  content: "";
+  right: 0px;
+  margin-top: 6px;
+  position: absolute;
+}
+
+
+.nav-left nav ul li:hover a {
+	color: #d2d2d2;
+	text-decoration: none;
+}
+
+.nav-left .nav-left-icon {
+	margin-right: 13px;
+}
+
+.container-admin {
+	padding-top: 90px;
+	padding-left: 242px;
+	padding-right: 30px;
+}
+
+.admin {
+	background-color: #f4f4f4;
+	color: #8a8a8a;
+}
+
+.box-admin {
+	border: 1px solid rgba(0,0,0,0.12);
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0px;
+	margin-bottom: 30px;
+}
+
+.box-verde {
+	background-color: #2ecc71!important;
+}
+
+.box-verde .box-conteudo {
+	color: #fff;
+}
+
+.box-admin .box-titulo {
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	border-radius: 5px 5px 0px 0px;
+	padding: 8px 25px;
+	color: #8a8a8a;
+	font-size: 16px;
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", "PT sans", Calibri, sans-serif;
+}
+
+.box-verde .box-titulo {
+	color: #fff;
+	background: none;
+}
+
+.box-admin .box-titulo i {
+	margin-right: 9px;
+}
+
+.box-admin .box-conteudo {
+	padding: 25px;
+	font-size: 16px;
+}
+
+.cardapio-box .cardapio-content {
+	padding: 10px 0px;
+}
+
+.cardapio-box .top-cardapio {
+	border-bottom: #e6e6e6 1px solid;
+	padding-bottom: 10px;
+}
+
+
+.cardapio-box .arrow-right {
+	float: right;
+	margin-right: 0px;
+}
+
+.cardapio-box .arrow-left {
+	float: left;
+	margin-left: 0px;
+}
+
+.cardapio-box .arrow-left, .cardapio-box .arrow-right  {
+	position: relative;
+}
+
+.table-cardapio th h3 {
+	margin: 0px;
+}
+
+.table-cardapio th {
+	border: none!important;
+}
+
+.ajuste-cardapio {
+	padding-top: 8px!important;
+	padding-bottom: 8px!important;
+}
+
+.box-admin .ajuste-creditos {
+	padding-top: 0px!important;
+	padding-bottom: 15px!important;
+}
+
+.bg-creditos {
+	background: url('../img/bg-creditos.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.table-historico {
+	margin: 0px;
+}
+
+.table-historico tr td {
+	padding: 10px;
+}
+
+
+.table-historico tr td:last-child {
+	text-align: right;
+}
+
+.table-cardapio {
+	width: 46%;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.table-cardapio:first-child {
+	margin-right: 8%;
+}
+
+.font-regular {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", "PT sans", Calibri, sans-serif;
+}
+
+.font-semibold {
+	font-family: "Myriad Pro Semibold", "Gill Sans", "Gill Sans MT", "PT sans", Calibri, sans-serif;
+}
+
+.badge-historico {
+	font-size: 100%!important;
+}
+
+.dropdown-usuario {
+	top:40px!important;
+}
+
+.dropdown-item {
+	color: #8a8a8a;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+	color: #8a8a8a;
+}
+
+.dropdown-item:selected {
+	color: #000;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #27b965;
+}
+
+.separador-menu-responsivo {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.top-responsivo {
+	display: none;
+	position: fixed;
+	width: 100%;
+	background-color: #242424;
+	z-index: 999;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.top-responsivo .logo-admin-responsivo {
+	float: left;
+}
+
+.top-responsivo .nav .nav-item a i {
+	margin-right: 8px;
+}
+
+.top-responsivo .nav .nav-item a {
+	color: #a8a8a8;
+ 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.top-responsivo .nav .nav-item a:hover {
+	color: #ddd;
+}
+
+.top-responsivo .nav {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.btn:hover {
+    color:#fff;
+}
+
+
+/* dispositivos móveis */
+
+/* telas pequenas (até 767px) */
+
+@media only screen and (max-width: 767px) {
+	.height-box-login {
+		height: auto;
+	}
+
+	.login-place {
+		border-radius:0px;
+	}
+
+	.cardapio {
+		border-radius:0px;
+		box-shadow: none;
+	}
+
+	.nav-left {
+		display: none;
+	}
+
+	.container-admin {
+		padding-left: 30px;
+	}
+
+	.top {
+		display: none;
+	}
+
+	.top-responsivo {
+		display: block;
+	}
+}
+
+
+
+
+
+.box-login input::-webkit-input-placeholder { color: #a8a8a8; font-size: 16px; }  /* WebKit, Blink, Edge */
+.box-login input:-moz-placeholder { color: #a8a8a8; font-size: 16px; }  /* Mozilla Firefox 4 to 18 */
+.box-login input::-moz-placeholder { color: #a8a8a8; font-size: 16px; }  /* Mozilla Firefox 19+ */
+.box-login input:-ms-input-placeholder { color: #a8a8a8; font-size: 16px; }  /* Internet Explorer 10-11 */
+.box-login input::-ms-input-placeholder { color: #a8a8a8; font-size: 16px; }  /* Microsoft Edge */
+
